@@ -1,7 +1,19 @@
 import cv2
 import mediapipe as mp
 import numpy as np
+import time
+import os
+import google.generativeai as genai
+from dotenv import load_dotenv
+load_dotenv()
 cap = cv2.VideoCapture(0)
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+def get_gemini_response_text(input_prompt):
+    model = genai.GenerativeModel('gemini-pro')
+    response = model.generate_content(input_prompt)
+    #parsed_data = json.loads(response.text)
+    # diet_plan = parsed_data.get('Diet Plan', [])
+    return response.text
 address="1990:8000"
 mp_drawing = mp.solutions.drawing_utils
 mp_pose = mp.solutions.pose
@@ -21,7 +33,7 @@ def calculate_angle(a,b,c):
 
 counter = 0 
 stage = None
-
+start_time = time.time()
 with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
     while cap.isOpened():
         ret, frame = cap.read()
@@ -31,7 +43,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
       
      
         results = pose.process(image)
-    
+        
 
         image.flags.writeable = True
         image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
@@ -88,3 +100,14 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
 
     cap.release()
     cv2.destroyAllWindows()
+
+end_time = time.time()
+duration = end_time - start_time
+input_prompt="""
+You are professional gym trainer and on person did 
+biceps in duration of time u need to comment on its performance
+number of biceps:{counter}
+in duration: {duration}
+"""   
+response=get_gemini_response_text(input_prompt)
+print(response)
