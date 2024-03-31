@@ -1,0 +1,565 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Form</title>
+</head>
+<body>
+    <h1>Button Form</h1>
+    
+        <button onclick="window.location.href='/calories'">Calories</button>
+        <button type="submit" name="button" value="diet_plan">Diet Plan</button>
+        <button type="submit" name="button" value="chatbot">Chatbot</button>
+        <button type="submit" name="button" value="research">Research</button>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to Gemini Health App</h1>
+    <a href="/calories"><button>Calories</button></a>
+    
+    <a href ="/planner"><button>Diet Planner</button></a>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MediNOps</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/utilities.css" />
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-content d-flex justify-content-between align-items-center">
+                        <div class="brand-and-toggler d-flex align-items-center justify-content-between">
+                            <a href="#" class="navbar-brand d-flex align-items-center">
+                                <span class="brand-shape d-inline-block text-white">N</span>
+                                <span class="brand-text fw-7">MediNOps</span>
+                            </a>
+                            <button type="button" class="d-none navbar-show-btn">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+
+                        <div class="navbar-box">
+                            <button type="button" class="navbar-hide-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+
+                            <ul class="navbar-nav d-flex align-items-center">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white nav-active text-nowrap">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white text-nowrap">Find a doctor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white text-nowrap">Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white text-nowrap">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white text-nowrap">About us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="element-one">
+                <img src="static/images/element-img-1.png" alt="">
+            </div>
+
+            <div class="banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <div class="banner-left">
+                            <div class="content-wrapper">
+                                <h1 class="banner-title">Virtual healthcare <br> for you</h1>
+                                <p class="text text-white">MediNops provides progressive, and affordable healthcare,
+                                    accessible on mobile and onnline for everyone</p>
+                                <a href="#" class="btn btn-secondary">Consult today</a>
+                            </div>
+                        </div>
+
+                        <div class="banner-right d-flex align-items-center justify-content-end">
+                            <img src="static/images/banner-image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <main>
+            <section class="sc-services">
+                <div class="services-shape">
+                    <img src="static/images/curve-shape-1.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="services-content">
+                        <div class="title-box text-center">
+                            <div class="content-wrapper">
+                                <h3 class="title-box-name">Our services</h3>
+                                <div class="title-separator mx-auto"></div>
+                                <p class="text title-box-text">We provide you the best choices for you. Adjust it to
+                                    your health needs and make sure you undergo treatment with our highly GenAi you can
+                                    consult with us which type of service is suitable for your health</p>
+                            </div>
+                        </div>
+
+                        <div class="services-list">
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="static/images/service-icon-1.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Count Your Calories</h5>
+                                <p class="text">Choose your doctor form thousands of specialist, general and trusted
+                                    hospitals.</p>
+                                <a href="/calories" class="btn btn-secondary">Check</a>
+                            </div>
+
+                            <!-- <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="assets/images/service-icon-2.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Online pharmacy</h5>
+                                <p class="text">Buy your medicines with our mobile application with a simple delivery
+                                    system</p>
+                                <a href="#" class="btn btn-secondary">Check</a>
+                            </div> -->
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="static/images/service-icon-2.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Plan Your Diet</h5>
+                                <p class="text">Buy your medicines with our mobile application with a simple delivery
+                                    system</p>
+                                <a href="/planner" class="btn btn-secondary">Check</a>
+                            </div>
+
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="static/images/service-icon-3.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Consultation</h5>
+                                <p class="text">Free consultation with our trusted doctors and get the best
+                                    recommendations.</p>
+                                <a href="#" class="btn btn-secondary">Check</a>
+                            </div>
+
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="static/images/service-icon-4.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Details info</h5>
+                                <p class="text">Free consultation with our trusted doctors and get the best
+                                    recommendations.</p>
+                                <a href="#" class="btn btn-secondary">Check</a>
+                            </div>
+
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="static/images/service-icon-5.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Emergency care</h5>
+                                <p class="text">You can get 24/7 urgent care for yourself or your children and your
+                                    lovely family.</p>
+                                <a href="#" class="btn btn-secondary">Check</a>
+                            </div>
+
+                            <div class="services-item">
+                                <div class="item-icon">
+                                    <img src="static/images/service-icon-6.png" alt="service icon">
+                                </div>
+                                <h5 class="item-title fw-7">Tracking</h5>
+                                <p class="text">Track and save your mental history and health data</p>
+                                <a href="/VideoLive" class="btn btn-secondary">Check</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center services-main-btn">
+                            <button type="button" class="btn btn-primary-outline">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-grid sc-grid-one">
+                <div class="container">
+                    <div class="grid-content d-grid align-items-center">
+                        <div class="grid-img">
+                            <img src="static/images/health-care-img.png" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <div class="content-wrapper text-start">
+                                <div class="title-box">
+                                    <h3 class="title-box-name text-white">Leading healthcare providers</h3>
+                                    <div class="title-separator mx-auto"></div>
+                                </div>
+
+                                <p class="text title-box-text text-white">Medimoor provides progressive, and affordable
+                                    healthcare, accessible on mobile and online for everyone. To us, it's not just work.
+                                    We take pride in the solutions we deliver</p>
+                                <button type="button" class="btn btn-white-outline">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-grid sc-grid-two">
+                <div class="container">
+                    <div class="grid-content d-grid align-items-center">
+                        <div class="grid-img">
+                            <img src="static/images/download-image.png" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <div class="content-wrapper text-start">
+                                <div class="title-box">
+                                    <h3 class="title-box-name">Download our mobile apps</h3>
+                                    <div class="title-separator mx-auto"></div>
+                                </div>
+                                <p class="text title-box-text">Our dedicated patient engagement app and web portal allow
+                                    you to access information instantaneously (no tedeous form, long calls, or
+                                    administrative hassle) and securely</p>
+                                <button type="button" class="btn btn-primary-outline">
+                                    Download
+                                    <img src="static/images/arrow-down.svg" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-feedback">
+                <div class="container">
+                    <div class="feedback-content">
+                        <div class="feedback-element">
+                            <img src="static/images/element-img-3.png">
+                        </div>
+                        <div class="feedback-element-2">
+                            <img src="static/images/element-img-5.png">
+                        </div>
+                        <div class="title-box text-center">
+                            <div class="content-wrapper">
+                                <h3 class="title-box-name text-white">What our customer are saying</h3>
+                                <div class="title-separator mx-auto"></div>
+                            </div>
+                        </div>
+
+                        <div class="feedback-list feedback-slider owl-carousel owl-theme">
+                            <div class="feedback-item d-grid">
+                                <div class="item-left d-flex align-items-center">
+                                    <div class="item-img">
+                                        <img src="static/images/person-image.png" alt="">
+                                    </div>
+                                    <div class="item-info text-white">
+                                        <p class="fw-7 name">Shobit Gupta</p>
+                                        <span class="designation fw-4">Web Ops</span>
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <p class="text text-white">""As someone deeply invested in my health and fitness
+                                        journey, I can't praise this AI platform enough. It's like having a personal
+                                        health coach right in my pocket! From tracking my workouts to suggesting
+                                        personalized meal plans, it has significantly enhanced my overall well-being.
+                                        The intuitive interface makes it easy to navigate, and the AI's insights have
+                                        helped me achieve my fitness goals faster than I ever thought possible. Highly
+                                        recommended!""</p>
+                                </div>
+                            </div>
+
+                            <div class="feedback-item d-grid">
+                                <div class="item-left d-flex align-items-center">
+                                    <div class="item-img">
+                                        <img src="static/images/person-image.png" alt="">
+                                    </div>
+                                    <div class="item-info text-white">
+                                        <p class="fw-7 name">Prathmesh Raut</p>
+                                        <span class="designation fw-4">GenAi Ops</span>
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <p class="text text-white">"Being a busy professional, finding time for self-care
+                                        can be challenging. That's where this health tech AI comes in. It seamlessly
+                                        integrates into my daily routine, providing gentle reminders to take breaks,
+                                        stay hydrated, and even offering quick stress-relief exercises. Its ability to
+                                        adapt to my schedule and preferences makes it feel like a personalized wellness
+                                        assistant. While there's always room for improvement, I'm impressed with its
+                                        functionality and the positive impact it's had on my overall health."</p>
+                                </div>
+                            </div>
+
+                            <div class="feedback-item d-grid">
+                                <div class="item-left d-flex align-items-center">
+                                    <div class="item-img">
+                                        <img src="static/images/person-image.png" alt="">
+                                    </div>
+                                    <div class="item-info text-white">
+                                        <p class="fw-7 name">Paritosh Shukhla</p>
+                                        <span class="designation fw-4">ML Ops</span>
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <p class="text text-white">"As a senior citizen, staying on top of my health is a
+                                        top priority. This AI platform has been a game-changer for me. Not only does it
+                                        remind me to take my medications on time, but it also provides valuable health
+                                        insights based on my medical history and current condition. The friendly
+                                        interface makes it accessible for users of all ages, and the proactive approach
+                                        to wellness has empowered me to take control of my health like never before. I
+                                        wholeheartedly endorse this AI for anyone looking to age gracefully while
+                                        prioritizing their well-being."</p>
+                                </div>
+                            </div>
+
+                            <div class="feedback-item d-grid">
+                                <div class="item-left d-flex align-items-center">
+                                    <div class="item-img">
+                                        <img src="static/images/person-image.png" alt="">
+                                    </div>
+                                    <div class="item-info text-white">
+                                        <p class="fw-7 name">Atharva Wakhara</p>
+                                        <span class="designation fw-4">React Js</span>
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <p class="text text-white">"Living with a chronic illness can feel isolating at
+                                        times, but this health tech AI has become my constant companion in managing my
+                                        condition. Its ability to analyze my symptoms, track medication effectiveness,
+                                        and provide real-time support has significantly improved my quality of life. I
+                                        appreciate how it adapts to my changing needs and offers tailored
+                                        recommendations to help me better cope with my illness. This AI isn't just a
+                                        tool—it's a lifeline for anyone navigating the complexities of chronic health
+                                        conditions"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-articles">
+                <div class="articles-shape">
+                    <img src="static/images/curve-shape-2.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="articles-content">
+                        <div class="articles-element">
+                            <img src="static/images/element-img-2.png" alt="">
+                        </div>
+                        <div class="title-box text-center">
+                            <div class="content-wrapper">
+                                <h3 class="title-box-name">Check out our latest article</h3>
+                                <div class="title-separator mx-auto"></div>
+                            </div>
+                        </div>
+
+                        <div class="articles-list d-flex flex-wrap justify-content-center">
+                            <article class="articles-item">
+                                <div class="item-img">
+                                    <img src="static/images/article-img-1.png">
+                                </div>
+                                <div class="item-body">
+                                    <div class="item-title">Disease detection, check up in the laboratory</div>
+                                    <p class="text">In this case, the role of the health laboratory is very important to
+                                        do a disease detection ...</p>
+                                    <a href="#" class="item-link text-blue d-flex align-items-baseline">
+                                        <span class="item-link-text">Read more</span>
+                                        <span class="item-link-icon">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="articles-item">
+                                <div class="item-img">
+                                    <img src="static/images/article-img-2.png">
+                                </div>
+                                <div class="item-body">
+                                    <div class="item-title">Herbal medicines that are safe for consumption</div>
+                                    <p class="text">Herbal medicine is very widely used at this time because of its very
+                                        good for your health ...</p>
+                                    <a href="#" class="item-link text-blue d-flex align-items-baseline">
+                                        <span class="item-link-text">Read more</span>
+                                        <span class="item-link-icon">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="articles-item">
+                                <div class="item-img">
+                                    <img src="static/images/article-img-3.png">
+                                </div>
+                                <div class="item-body">
+                                    <div class="item-title">Natural care for healthy facial skin</div>
+                                    <p class="text">A healthy lifestyle should start from now and also for your skin
+                                        health ...</p>
+                                    <a href="#" class="item-link text-blue d-flex align-items-baseline">
+                                        <span class="item-link-text">Read more</span>
+                                        <span class="item-link-icon">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+        <div id="chatbot-button" class="chatbot-button">
+            <div class="chatbot-icon">
+                <img src="C:\\Users\\HP\\Desktop\\ACE\\static\\images\\chatboticons.png" alt="Chatbot-Icon">
+            </div>
+        </div>
+        <!-- Chatbot widget (hidden by default) -->
+        <div id="chatbot-widget" class="chatbot-widget">
+            <!-- Chatbot content goes here -->
+            <div class="chatbot-header">
+                <span>"NOps" : Ask Me Anything!</span>
+                <button id="close-chatbot-btn">Close</button>
+            </div>
+            <div class="chatbot-body">
+                <p>Ask Me!</p>
+                <!-- Chatbot conversation area -->
+                <div id="chatbot-conversation" class="chatbot-conversation"></div>
+                <!-- Input area for typing messages -->
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-list d-grid text-white">
+                        <div class="footer-item">
+                            <a href="#" class="navbar-brand d-flex align-items-center">
+                                <span class="brand-shape d-inline-block text-white">M</span>
+                                <span class="brand-text fw-7">MediNOps</span>
+                            </a>
+                            <p class="text-white">MediNOps provides progressive, and affordable healthcare, accessible
+                                on mobile and online for everyone</p>
+                            <p class="text-white copyright-text">&copy; MediNOps PTY LTD 2024. All rights reserved.</p>
+                        </div>
+
+                        <div class="footer-item">
+                            <h3 class="footer-item-title">Company</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Find a doctor</a></li>
+                                <li><a href="#">Apps</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-item">
+                            <h3 class="footer-item-title">Region</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Indonesia</a></li>
+                                <li><a href="#">Singapore</a></li>
+                                <li><a href="#">Hongkong</a></li>
+                                <li><a href="#">Canada</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-item">
+                            <h3 class="footer-item-title">Help</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Help center</a></li>
+                                <li><a href="#">Contact support</a></li>
+                                <li><a href="#">Instructions</a></li>
+                                <li><a href="#">How it works</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-element-1">
+                <img src="static/images/element-img-4.png" alt="">
+            </div>
+            <div class="footer-element-2">
+                <img src="static/images/element-img-5.png" alt="">
+            </div>
+        </footer>
+    </div>
+    <main>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            // Get chatbot elements
+            const chatbotButton = document.getElementById("chatbot-button");
+            const chatbotWidget = document.getElementById("chatbot-widget");
+            const closeButton = document.getElementById("close-chatbot-btn");
+
+            // Toggle chatbot widget visibility
+            chatbotButton.addEventListener("click", function () {
+                chatbotWidget.style.display = "block";
+            });
+
+            closeButton.addEventListener("click", function () {
+                chatbotWidget.style.display = "none";
+            });
+        });</script>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+
+
+
+</body>
+
+</html>

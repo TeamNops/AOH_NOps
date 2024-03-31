@@ -1,0 +1,278 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Page</title>
+</head>
+<body>
+    <h1>Calories Page</h1>
+    <form action="/calories" method="POST" enctype="multipart/form-data">
+        <input type="text" name="input" placeholder="Input Prompt"><br><br>
+        <input type="file" name="file" accept=".jpg,.jpeg,.png"><br><br>
+        <input type="submit" value="Tell me the total calories">
+    </form>
+    {% if response %}
+    <h2>The Response is</h2>
+    <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Track Your Calories</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/utilities.css" />
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+     <div class="page-wrapper">
+         
+        <header class="header">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-content d-flex justify-content-between align-items-center">
+                        <div class="brand-and-toggler d-flex align-items-center justify-content-between">
+                            <a href="#" class="navbar-brand d-flex align-items-center">
+                                <span class="brand-shape d-inline-block text-white">N</span>
+                                <span class="brand-text fw-7">MediNOps</span>
+                            </a>
+                            <button type="button" class="d-none navbar-show-btn">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+
+                        <div class="navbar-box">
+                            <button type="button" class="navbar-hide-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="element-one">
+                <img src="static/images/element-img-1.png" alt="">
+            </div>
+
+            <div class="banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <div class="banner-left">
+                            <div class="content-wrapper">
+                                <h1 class="banner-title">Track Your <br> Calories</h1>
+                                <p class="text text-white"></p>
+                                <a href="#" class="btn btn-secondary">Consult today</a>
+                            </div>
+                        </div>
+
+                        <div class="banner-right d-flex align-items-center justify-content-end">
+                            <img src="static/images/banner-image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> 
+        <!-- end of header -->
+
+        <main>
+            <section class="sc-services">
+                <div class="services-shape">
+                    <img src="static/images/curve-shape-1.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="services-content">
+                        <!-- <div class="title-box text-center"> -->
+                            <div class="content-wrapper">
+                                <!-- <h3 class="title-box-name">Our services</h3> -->
+                                <div class="title-separator mx-auto"></div>
+                                <!-- <p><b>Track Your Calories</b></p> -->
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="services-list">
+                                <div class="services-item">
+                                    <div class="item-icon">
+                                        <img src="static/images/service-icon-1.png" alt="service icon">
+                                    </div>
+                                    <h5 class="item-title fw-7">Tracking Your Calories</h5>
+                                    <form id="calories-form" action="/calories" method="POST" enctype="multipart/form-data">
+                                        <input type="text" name="input" placeholder="Input Prompt"><br><br>
+                                        <input type="file" name="file" accept=".jpg,.jpeg,.png"><br><br>
+                                        <!-- "Check" button to submit the form -->
+                                        <button type="submit" class="btn btn-secondary">Check</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            <script>
+                                // No need for separate event listener for the "Check" button now, as the form's submit button is being used.
+                            </script>
+                            
+                            
+            <section class="sc-grid sc-grid-two">
+                <div class="container">
+                    <div class="grid-content d-grid align-items-center">
+                        <div class="grid-img">
+                            <img src="static/images/download-image.png" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <div class="content-wrapper text-start">
+                                
+                                <h3 class="title-box-name"> {% if response %}
+                                        <h2>The Response is</h2>
+                                        <p>{{ response }}</p>
+                                        {% endif %}</h3>
+                                    <div class="title-separator mx-auto"></div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        
+        
+        <div id="chatbot-button" class="chatbot-button">
+            <div class="chatbot-icon">
+                <img src="/ACE/static/images/chatboticons.png" alt="Chatbot-Icon">
+            </div>
+        </div>
+        <!-- Chatbot widget (hidden by default) -->
+        <div id="chatbot-widget" class="chatbot-widget">
+            <!-- Chatbot content goes here -->
+            <div class="chatbot-header">
+                <span>"NOps" : Ask Me Anything!</span>
+                <button id="close-chatbot-btn">Close</button>
+            </div>
+            <div class="chatbot-body">
+                <p>Welcome to our chatbot!</p>
+                <!-- Chatbot conversation area -->
+                <div id="chatbot-conversation" class="chatbot-conversation"></div>
+                <!-- Input area for typing messages -->
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-list d-grid text-white">
+                        <div class="footer-item">
+                            <a href="#" class="navbar-brand d-flex align-items-center">
+                                <span class="brand-shape d-inline-block text-white">M</span>
+                                <span class="brand-text fw-7">MediNOps</span>
+                            </a>
+                            <p class="text-white">MediNOps provides progressive, and affordable healthcare, accessible
+                                on mobile and online for everyone</p>
+                            <p class="text-white copyright-text">&copy; MediNOps PTY LTD 2024. All rights reserved.</p>
+                        </div>
+
+                        <div class="footer-item">
+                            <h3 class="footer-item-title">Company</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Find a doctor</a></li>
+                                <li><a href="#">Apps</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-item">
+                            <h3 class="footer-item-title">Region</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Indonesia</a></li>
+                                <li><a href="#">Singapore</a></li>
+                                <li><a href="#">Hongkong</a></li>
+                                <li><a href="#">Canada</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-item">
+                            <h3 class="footer-item-title">Help</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Help center</a></li>
+                                <li><a href="#">Contact support</a></li>
+                                <li><a href="#">Instructions</a></li>
+                                <li><a href="#">How it works</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-element-1">
+                <img src="static/images/element-img-4.png" alt="">
+            </div>
+            <div class="footer-element-2">
+                <img src="static/images/element-img-5.png" alt="">
+            </div>
+        </footer>
+    </div>
+    <main>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            // Get chatbot elements
+            const chatbotButton = document.getElementById("chatbot-button");
+            const chatbotWidget = document.getElementById("chatbot-widget");
+            const closeButton = document.getElementById("close-chatbot-btn");
+
+            // Toggle chatbot widget visibility
+            chatbotButton.addEventListener("click", function () {
+                chatbotWidget.style.display = "block";
+            });
+
+            closeButton.addEventListener("click", function () {
+                chatbotWidget.style.display = "none";
+            });
+        });</script>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom js -->
+    <script src="static/js/script.js"></script>
+
+
+
+</body>
+
+</html>
+
+
